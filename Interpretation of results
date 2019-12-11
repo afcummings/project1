@@ -1,48 +1,35 @@
 Topic: Relationship between obesity and Alcohol consumption(spirit and bear)
 
-1st Problem statement: Does the consumption of alcohol, i.e spirit, affect obesity?
+Hypotheis: Does the consumption of alcohol, i.e spirit and beer, affect obesity?
 
-Hypothesis: If alcohol (spirit) correlates with obesity, then consuming 1 more liter of spirit per person for 1 year will increase obesity level.
+Null hypothesis: If alcohol (spirit and beer) have a direct relationship with obesity, then consuming 2 units of spirit and 3 units of beer will increase obesity level.
 
-Alternative hypothesis: If alcohol (spirit) negatively correlates with obesity, then consuming 1 more liter of spirit for 1 year will decrease obesity level by -9.18%
+Alternative hypothesis: If alcohol (spirit and beer) negatively correlates with obesity, then consuming 2 units of spirit and 3 units of beer will decrease obesity level.
 
-2nd Problem statement: Does the consumption of alcohol, i.e bear, affect obesity?
-Hypothesis: If alcohol (bear) positively correlates with obesity, then consuming 1 liter of bear for 1 year will inrease obesity level.
-
-
-Alternative hypothesis: If alcohol (beer) negatively correlates with obesity, then consuming 1 liter of bear for 1 year will decrease obesity level. 
 
 The regression model can be written as:
 Y= B0 + B1X1 + B2X2
-where Y =obesity.
-where B0 = the expected level of obesity when alcohol (spirit and bear) consumption are zero.
-where B1 and B2 = spirit and bear respectively.
-where X1 and X2 = the impact of spirit and bear on obesity.
+where Y = obesity,  which is what we want to estimate and possibly predict.
+where B0 = constant or the expected level of obesity when alcohol (spirit and bear) consumption are zero.
+where B1 and B2 = are the slope coefficient of spirit and bear variables. They measure the impact spirit and beer will have on obesity. 
+where X1 and X2 = are the independent variables (spirit and bear) which we are measuring the impact on obesity.
  
  
 
 Interpretation of results:
 Results show that obesity depends negatively on alcohol(Spirit), and positivley on beer
-The estimate of the intercept, B0 = 0.0396, indicates that the expected level of adult obesity  is 3.96%when alcohol (spirit and bear) consumption are zero. The estimate of the first slope coefficient, B1=-0.1314 indicates that a unit (i.e 1 liter) of spirit consumes generates a decrease in obesity by 13.14%. The estimate of the 2nd slope coefficient, B2= 0.0643 indicates that 1 liter of beer consumes leads to an increase in obesity by 6.43%
-The adjusted R square =  0.319 and it indicates that changes in both spirit and beer consumption account for 31.9% of changes in obesity. Which means 68.1% changes in obesity can be attributed to other variables not in this model. Hence, it can be said that the effect of spirit and beer consumption are insignificant in explaining obesity.
+The estimate of the intercept, B0 = 0.0394, indicates that the expected level of adult obesity  is 3.94% when alcohol (spirit and bear) consumption are zero. 
 
+The estimate of the first slope coefficient, B1=-0.1325 indicates that a unit increase in consumption of alcohol (i.e spirit) generates a decrease in obesity by 13.25%. Hence, we reject null hypothesis and accept alternative hypothesis that the level of obesity will reduce by consuming more of spirit.
 
-With the nature of our dataset, i.e the alcohol data are in unit of liter per person, and the obesity data are in thousands, hence, line graph won't be plausible in this analysis, hence, we made a scatter plot. Whilst we have used the difference equation method to correct the presence of autocorrelation, yet a small presence remains which could also be due to the sample size that is not robust.
+The estimate of the 2nd slope coefficient, B2= 0.1040 indicates that a unit increase in the consumption of beer leads to an increase in obesity level by 10.4%. Therefore, we reject alternative hypothesis and accept null hypothesis that obesity has a positive relationship with beer.
 
-Answer to the first hypothesis:
-Y = 0.0396 + (-0.1314)(1) = -9.18%
-Based on this result, we reject the hypothesis and accept alternative hypothesis that the level of obesity will reduce by consuming 1 more of spirit in one year
-
-Answer to the second hypothesis
-Y = 0.0396 + 0.0643(1) = 10.39%
-Based on this result, we accept the hypothesis that consuming 1 more liter of bear for 1 year will inrease obesity level by 10.39%
-and reject the alternative hypothesis that the level of obesity will reduce by consuming 1 more of beer in one year.
+The adjusted R square =  0.319, and it indicates that a unit change in both spirit and beer consumption account for 31.9% of changes in obesity. Which means 68.1% changes in obesity can be attributed to other variables not in this model. 
 
 Prediction,
-Based on our findings, if values of X1 and X2 are given as 2 and 3 litrs of spirit and beer respectively, then;
+Based on our findings, if values of X1 and X2 are given as 2 and 3 units of spirit and beer consumption respectively,say in one year, then our predicted percentage level of obesity will be;
  
- Y = 0.0396 + [-0.1314(2)] + 0.0643(3)= -3.03%
-  
-
-
+ Y = 0.0394 + [-0.1325(2)] + 0.1040(3)  
+  Y =0.0394 + (-0.265) + 0.312 = 8.64%
+ 
 
