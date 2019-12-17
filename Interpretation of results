@@ -1,0 +1,35 @@
+Topic: Relationship between obesity and Alcohol consumption(spirit and bear)
+
+Hypotheis: Does the consumption of alcohol, i.e spirit and beer, affect obesity?
+
+Null hypothesis: If alcohol (spirit and beer) have a direct relationship with obesity, then consuming 2 units of spirit and 3 units of beer will increase obesity level.
+
+Alternative hypothesis: If alcohol (spirit and beer) negatively correlates with obesity, then consuming 2 units of spirit and 3 units of beer will decrease obesity level.
+
+
+The regression model can be written as:
+Y= B0 + B1X1 + B2X2
+where Y = obesity,  which is what we want to estimate and possibly predict.
+where B0 = constant or the expected level of obesity when alcohol (spirit and bear) consumption are zero.
+where B1 and B2 = are the slope coefficient of spirit and bear variables. They measure the impact spirit and beer will have on obesity. 
+where X1 and X2 = are the independent variables (spirit and bear) which we are measuring the impact on obesity.
+ 
+ 
+
+Interpretation of results:
+Results show that obesity depends negatively on alcohol(Spirit), and positivley on beer
+The estimate of the intercept, B0 = 0.0394, indicates that the expected level of adult obesity  is 3.94% when alcohol (spirit and bear) consumption are zero. 
+
+The estimate of the first slope coefficient, B1=-0.1325 indicates that a unit increase in consumption of alcohol (i.e spirit) generates a decrease in obesity by 13.25%. Hence, we reject null hypothesis and accept alternative hypothesis that the level of obesity will reduce by consuming more of spirit.
+
+The estimate of the 2nd slope coefficient, B2= 0.1040 indicates that a unit increase in the consumption of beer leads to an increase in obesity level by 10.4%. Therefore, we reject alternative hypothesis and accept null hypothesis that obesity has a positive relationship with beer.
+
+The adjusted R square =  0.319, and it indicates that a unit change in both spirit and beer consumption account for 31.9% of changes in obesity. Which means 68.1% changes in obesity can be attributed to other variables not in this model. 
+
+Prediction,
+Based on our findings, if values of X1 and X2 are given as 2 and 3 units of spirit and beer consumption respectively,say in one year, then our predicted percentage level of obesity will be;
+ 
+ Y = 0.0394 + [-0.1325(2)] + 0.1040(3)  
+  Y =0.0394 + (-0.265) + 0.312 = 8.64%
+ 
+
